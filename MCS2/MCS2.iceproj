@@ -692,7 +692,9 @@
     <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="kendo\js\cession.js" />
     <Content Include="newPageTemplate.html" />
-    <Content Include="page1.html" />
+    <Content Include="page1.html">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="indexOld.html" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
@@ -804,7 +806,9 @@
     <Content Include="kendo\typescript\kendo.mobile.d.ts" />
     <Content Include="page2.html" />
     <Content Include="scripts\app.js" />
-    <Content Include="index.html" />
+    <Content Include="index.html">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="styles\main.css" />
     <Content Include="views\contacts.html" />
     <Content Include="views\home.html" />

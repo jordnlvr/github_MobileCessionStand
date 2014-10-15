@@ -1,0 +1,22 @@
+.content {
+    margin-bottom: 50px;
+}
+
+.tenFont{
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.elevenFont{
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.twelveFont{
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.paddedAll {
+    padding: 5px;
+}

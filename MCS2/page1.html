@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D&amp;M Ratchet App</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="css/ratchet.min.css" rel="stylesheet" />
+    <link href="css/ratchet-theme-ios.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div data-role="view">
+        <!--HEADER-->
+        <header class="bar bar-nav">
+            <img class="media pull-left" src="images/blueOrngBall32.png" style="padding-top: 5px;" />
+            <h1 class="title">D&amp;M Concessions</h1>
+            <a class="btn btn-link bnt-nav pull-right" id="btnBack" onclick="goBack()">BACK</a>
+        </header>
+        <!--CONTENT-->
+        <div class="content">
+            <!--PADDED CONTENT-->
+            <div class="content-padded">
+                <h3>something</h3>
+            </div>
+            <!--CARD SURROUNDED CONTENT-->
+            <div class="card">
+                <div class="table-view">
+                    <div class="table-view-cell media">
+                        <div class="tenFont">
+                            <img class="media-object pull-left" src="images/2b55ab2.jpg" style="width: 60px;" />
+                            <div class="media-body">
+                                <p>logged in as</p>
+                                <p style="color: #006194; font-size: 12px;"><label id="lblPerson"></label></p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card elevenFont paddedAll">
+                <div>
+                    <a class="button selected-button" data-role="button" href="newPageTemplate.html">New Page</a>
+                    <br />
+                    And a whole bunch of other text goes here that can test how clear, how nice, and if (or if not) the 'good' class will work around other divs and items that have their own definitions.
+                </div>
+            </div>
+        </div>
+        <!--TAB CONTROL AT BOTTOM-->
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="index.html">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">Home</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-person"></span>
+                <span class="tab-label">Profile</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-star-filled"></span>
+                <span class="tab-label">Favorites</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-search"></span>
+                <span class="tab-label">Search</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-gear"></span>
+                <span class="tab-label">Settings</span>
+            </a>
+        </nav>
+
+    </div>
+    <!--<script src="js/ratchet.min.js"></script>-->
+    <!--<script src="js/push.js"></script>-->
+    <script src="js/modals.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="kendo/js/cession.js"></script>
+    <script>
+        var app = new kendo.mobile.Application($(document.body), { transition: "zoom" });
+        var button = $("#btnBack").kendoMobileButton();
+
+        var search = window.getParameterByName("q");
+        $('#lblPerson').text(search);
+        //alert(search);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>D M Ratchet App</title>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="css/ratchet-theme-ios.min.css" rel="stylesheet" />
+    <link href="css/ratchet.min.css" rel="stylesheet" />
+
+    <style>
+        /*html,body{
+            height:100%;
+            width: 100%;
+            background: url(images/gradientBack.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }*/
+        html, body {
+            background: #ffffff; /* Old browsers */
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNmM2YzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 60%, #c6c6c6 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(60%,#fbfbfb), color-stop(100%,#c6c6c6)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #ffffff 0%,#fbfbfb 60%,#c6c6c6 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #ffffff 0%,#fbfbfb 60%,#c6c6c6 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #ffffff 0%,#fbfbfb 60%,#c6c6c6 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #ffffff 0%,#fbfbfb 60%,#c6c6c6 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-8 */
+        }
+
+        .Center-Container.is-Inline {
+            text-align: center;
+            overflow: auto;
+        }
+
+            .Center-Container.is-Inline:after,
+            .is-Inline .Center-Block {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .Center-Container.is-Inline:after {
+                content: '';
+                height: 100%;
+                margin-left: -0.25em; /* To offset spacing. May vary by font */
+            }
+
+        .is-Inline .Center-Block {
+            max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
+            /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
+            margin-top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="view">
+        <div class="Center-Container is-Inline">
+            <div class="Center-Block">
+                <!-- CONTENT -->
+                <img src="images/blueOrngDandM2_250.png" class="" alt="" />
+            </div>
+        </div>
+        <div style="clear:both; position:fixed; width:100%; bottom:0; margin-bottom: 15%;">
+
+            <div style="position: relative; margin: 0 auto; text-align: center; background-image: url(images/candy1Small.png); width: 75%;">
+
+                <div style="font-size: 10px;">
+                    <br /><br />
+                    <div style="font-size: 12pt; color: white; width: 60%; padding-bottom: 11px;">
+                        Login as
+                    </div>
+
+                    <p>
+                        <select id="selectUser" name="selectUser" style="color: #006194; background-color: white; width: 60%; line-height: 2em; font-size: 10pt;">
+                            <option value="" style="font-size: 12pt;">
+                                **SELECT USER**
+                            </option>
+                            <option value="Kelly" style="font-size: 12pt;">Kelly Seale</option>
+                            <option value="Michelle" style="font-size: 12pt;">Michelle Seale</option>
+                            <option value="Dana" style="font-size: 12pt;">Dana Wanzer</option>
+                            <option value="Brad" style="font-size: 12pt;">Brad Wanzer</option>
+                            <option value="Ashlyn" style="font-size: 12pt;">Ashlyn Seale</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"><br /></div>
+
+            <div class="content-padded" style="width: 300px; margin: 0 auto; position: relative;">
+                <a class="btn btn-primary btn-block" onclick="goLogin()" style="line-height: 1.2em; width: 300px; font-size: 14pt;" id="btnLogin">Login</a>
+            </div>
+            <div id="announcements" style="padding: 10px;">
+                
+            </div>
+        </div>
+    </div>
+    <!--<script src="js/ratchet.min.js"></script>-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script>
+        var app = new kendo.mobile.Application($(document.body), { transition: "zoom" });
+        
+        var button = $("#button").kendoMobileButton();
+        //var template = "Today we are introducing a new feature that you will love...";
+        //$("#announcements").html(template);
+        var selected = $("#selectUser");
+        var btnLogin = $('btnLogin').kendoMobileButton();
+        var href = "page1.html?q=" + selected.val();
+
+        function goLogin() {
+            //app.navigate(href);            
+            var selected = $("#selectUser");
+            location.href = href + selected.val();
+        }
+        
+    </script>
+
+</body>
+</html>
