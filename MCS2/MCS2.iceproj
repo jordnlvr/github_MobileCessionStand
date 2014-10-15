@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>e0f7e9e3-5e14-4100-9da5-15edda38a5a2</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".abproject" />
+    <Content Include="bower_components\angular-animate\.bower.json" />
+    <Content Include="bower_components\angular-animate\angular-animate.js" />
+    <Content Include="bower_components\angular-animate\angular-animate.min.js" />
+    <Content Include="bower_components\angular-animate\angular-animate.min.js.map" />
+    <Content Include="bower_components\angular-animate\bower.json" />
+    <Content Include="bower_components\angular-animate\README.md" />
+    <Content Include="bower_components\angular-sanitize\.bower.json" />
+    <Content Include="bower_components\angular-sanitize\angular-sanitize.js" />
+    <Content Include="bower_components\angular-sanitize\angular-sanitize.min.js" />
+    <Content Include="bower_components\angular-sanitize\angular-sanitize.min.js.map" />
+    <Content Include="bower_components\angular-sanitize\bower.json" />
+    <Content Include="bower_components\angular-sanitize\README.md" />
+    <Content Include="bower_components\angular\.bower.json" />
+    <Content Include="bower_components\angular\angular-csp.css" />
+    <Content Include="bower_components\angular\angular.js" />
+    <Content Include="bower_components\angular\angular.min.js" />
+    <Content Include="bower_components\angular\angular.min.js.gzip" />
+    <Content Include="bower_components\angular\angular.min.js.map" />
+    <Content Include="bower_components\angular\bower.json" />
+    <Content Include="bower_components\angular\README.md" />
+    <Content Include="bower_components\ionicons\.bower.json" />
+    <Content Include="bower_components\ionicons\animation.html" />
+    <Content Include="bower_components\ionicons\bower.json" />
+    <Content Include="bower_components\ionicons\cheatsheet.html" />
+    <Content Include="bower_components\ionicons\component.json" />
+    <Content Include="bower_components\ionicons\composer.json" />
+    <Content Include="bower_components\ionicons\css\ionicons.css" />
+    <Content Include="bower_components\ionicons\css\ionicons.min.css" />
+    <Content Include="bower_components\ionicons\fonts\ionicons.eot" />
+    <Content Include="bower_components\ionicons\fonts\ionicons.svg" />
+    <Content Include="bower_components\ionicons\fonts\ionicons.ttf" />
+    <Content Include="bower_components\ionicons\fonts\ionicons.woff" />
+    <Content Include="bower_components\ionicons\less\ionicons.less" />
+    <Content Include="bower_components\ionicons\less\_ionicons-animation.less" />
+    <Content Include="bower_components\ionicons\less\_ionicons-font.less" />
+    <Content Include="bower_components\ionicons\less\_ionicons-icons.less" />
+    <Content Include="bower_components\ionicons\less\_ionicons-variables.less" />
+    <Content Include="bower_components\ionicons\LICENSE" />
+    <Content Include="bower_components\ionicons\png\512\alert-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\alert.png" />
+    <Content Include="bower_components\ionicons\png\512\android-add-contact.png" />
+    <Content Include="bower_components\ionicons\png\512\android-add.png" />
+    <Content Include="bower_components\ionicons\png\512\android-alarm.png" />
+    <Content Include="bower_components\ionicons\png\512\android-archive.png" />
+    <Content Include="bower_components\ionicons\png\512\android-arrow-back.png" />
+    <Content Include="bower_components\ionicons\png\512\android-arrow-down-left.png" />
+    <Content Include="bower_components\ionicons\png\512\android-arrow-down-right.png" />
+    <Content Include="bower_components\ionicons\png\512\android-arrow-up-left.png" />
+    <Content Include="bower_components\ionicons\png\512\android-arrow-up-right.png" />
+    <Content Include="bower_components\ionicons\png\512\android-battery.png" />
+    <Content Include="bower_components\ionicons\png\512\android-book.png" />
+    <Content Include="bower_components\ionicons\png\512\android-calendar.png" />
+    <Content Include="bower_components\ionicons\png\512\android-call.png" />
+    <Content Include="bower_components\ionicons\png\512\android-camera.png" />
+    <Content Include="bower_components\ionicons\png\512\android-chat.png" />
+    <Content Include="bower_components\ionicons\png\512\android-checkmark.png" />
+    <Content Include="bower_components\ionicons\png\512\android-clock.png" />
+    <Content Include="bower_components\ionicons\png\512\android-close.png" />
+    <Content Include="bower_components\ionicons\png\512\android-contact.png" />
+    <Content Include="bower_components\ionicons\png\512\android-contacts.png" />
+    <Content Include="bower_components\ionicons\png\512\android-data.png" />
+    <Content Include="bower_components\ionicons\png\512\android-developer.png" />
+    <Content Include="bower_components\ionicons\png\512\android-display.png" />
+    <Content Include="bower_components\ionicons\png\512\android-download.png" />
+    <Content Include="bower_components\ionicons\png\512\android-dropdown.png" />
+    <Content Include="bower_components\ionicons\png\512\android-earth.png" />
+    <Content Include="bower_components\ionicons\png\512\android-folder.png" />
+    <Content Include="bower_components\ionicons\png\512\android-forums.png" />
+    <Content Include="bower_components\ionicons\png\512\android-friends.png" />
+    <Content Include="bower_components\ionicons\png\512\android-hand.png" />
+    <Content Include="bower_components\ionicons\png\512\android-image.png" />
+    <Content Include="bower_components\ionicons\png\512\android-inbox.png" />
+    <Content Include="bower_components\ionicons\png\512\android-information.png" />
+    <Content Include="bower_components\ionicons\png\512\android-keypad.png" />
+    <Content Include="bower_components\ionicons\png\512\android-lightbulb.png" />
+    <Content Include="bower_components\ionicons\png\512\android-locate.png" />
+    <Content Include="bower_components\ionicons\png\512\android-location.png" />
+    <Content Include="bower_components\ionicons\png\512\android-mail.png" />
+    <Content Include="bower_components\ionicons\png\512\android-microphone.png" />
+    <Content Include="bower_components\ionicons\png\512\android-mixer.png" />
+    <Content Include="bower_components\ionicons\png\512\android-more.png" />
+    <Content Include="bower_components\ionicons\png\512\android-note.png" />
+    <Content Include="bower_components\ionicons\png\512\android-playstore.png" />
+    <Content Include="bower_components\ionicons\png\512\android-printer.png" />
+    <Content Include="bower_components\ionicons\png\512\android-promotion.png" />
+    <Content Include="bower_components\ionicons\png\512\android-reminder.png" />
+    <Content Include="bower_components\ionicons\png\512\android-remove.png" />
+    <Content Include="bower_components\ionicons\png\512\android-search.png" />
+    <Content Include="bower_components\ionicons\png\512\android-send.png" />
+    <Content Include="bower_components\ionicons\png\512\android-settings.png" />
+    <Content Include="bower_components\ionicons\png\512\android-share.png" />
+    <Content Include="bower_components\ionicons\png\512\android-social-user.png" />
+    <Content Include="bower_components\ionicons\png\512\android-social.png" />
+    <Content Include="bower_components\ionicons\png\512\android-sort.png" />
+    <Content Include="bower_components\ionicons\png\512\android-star.png" />
+    <Content Include="bower_components\ionicons\png\512\android-stopwatch.png" />
+    <Content Include="bower_components\ionicons\png\512\android-storage.png" />
+    <Content Include="bower_components\ionicons\png\512\android-system-back.png" />
+    <Content Include="bower_components\ionicons\png\512\android-system-home.png" />
+    <Content Include="bower_components\ionicons\png\512\android-system-windows.png" />
+    <Content Include="bower_components\ionicons\png\512\android-timer.png" />
+    <Content Include="bower_components\ionicons\png\512\android-trash.png" />
+    <Content Include="bower_components\ionicons\png\512\android-volume.png" />
+    <Content Include="bower_components\ionicons\png\512\android-wifi.png" />
+    <Content Include="bower_components\ionicons\png\512\archive.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-down-a.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-down-b.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-down-c.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-expand.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-graph-down-left.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-graph-down-right.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-graph-up-left.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-graph-up-right.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-left-a.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-left-b.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-left-c.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-move.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-resize.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-return-left.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-return-right.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-right-a.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-right-b.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-right-c.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-shrink.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-swap.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-up-a.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-up-b.png" />
+    <Content Include="bower_components\ionicons\png\512\arrow-up-c.png" />
+    <Content Include="bower_components\ionicons\png\512\at.png" />
+    <Content Include="bower_components\ionicons\png\512\bag.png" />
+    <Content Include="bower_components\ionicons\png\512\battery-charging.png" />
+    <Content Include="bower_components\ionicons\png\512\battery-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\battery-full.png" />
+    <Content Include="bower_components\ionicons\png\512\battery-half.png" />
+    <Content Include="bower_components\ionicons\png\512\battery-low.png" />
+    <Content Include="bower_components\ionicons\png\512\beaker.png" />
+    <Content Include="bower_components\ionicons\png\512\beer.png" />
+    <Content Include="bower_components\ionicons\png\512\bluetooth.png" />
+    <Content Include="bower_components\ionicons\png\512\bookmark.png" />
+    <Content Include="bower_components\ionicons\png\512\briefcase.png" />
+    <Content Include="bower_components\ionicons\png\512\bug.png" />
+    <Content Include="bower_components\ionicons\png\512\calculator.png" />
+    <Content Include="bower_components\ionicons\png\512\calendar.png" />
+    <Content Include="bower_components\ionicons\png\512\camera.png" />
+    <Content Include="bower_components\ionicons\png\512\card.png" />
+    <Content Include="bower_components\ionicons\png\512\chatbox-working.png" />
+    <Content Include="bower_components\ionicons\png\512\chatbox.png" />
+    <Content Include="bower_components\ionicons\png\512\chatboxes.png" />
+    <Content Include="bower_components\ionicons\png\512\chatbubble-working.png" />
+    <Content Include="bower_components\ionicons\png\512\chatbubble.png" />
+    <Content Include="bower_components\ionicons\png\512\chatbubbles.png" />
+    <Content Include="bower_components\ionicons\png\512\checkmark-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\checkmark-round.png" />
+    <Content Include="bower_components\ionicons\png\512\checkmark.png" />
+    <Content Include="bower_components\ionicons\png\512\chevron-down.png" />
+    <Content Include="bower_components\ionicons\png\512\chevron-left.png" />
+    <Content Include="bower_components\ionicons\png\512\chevron-right.png" />
+    <Content Include="bower_components\ionicons\png\512\chevron-up.png" />
+    <Content Include="bower_components\ionicons\png\512\clipboard.png" />
+    <Content Include="bower_components\ionicons\png\512\clock.png" />
+    <Content Include="bower_components\ionicons\png\512\close-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\close-round.png" />
+    <Content Include="bower_components\ionicons\png\512\close.png" />
+    <Content Include="bower_components\ionicons\png\512\cloud.png" />
+    <Content Include="bower_components\ionicons\png\512\code-download.png" />
+    <Content Include="bower_components\ionicons\png\512\code-working.png" />
+    <Content Include="bower_components\ionicons\png\512\code.png" />
+    <Content Include="bower_components\ionicons\png\512\coffee.png" />
+    <Content Include="bower_components\ionicons\png\512\compass.png" />
+    <Content Include="bower_components\ionicons\png\512\compose.png" />
+    <Content Include="bower_components\ionicons\png\512\connection-bars.png" />
+    <Content Include="bower_components\ionicons\png\512\contrast.png" />
+    <Content Include="bower_components\ionicons\png\512\disc.png" />
+    <Content Include="bower_components\ionicons\png\512\document-text.png" />
+    <Content Include="bower_components\ionicons\png\512\document.png" />
+    <Content Include="bower_components\ionicons\png\512\drag.png" />
+    <Content Include="bower_components\ionicons\png\512\earth.png" />
+    <Content Include="bower_components\ionicons\png\512\edit.png" />
+    <Content Include="bower_components\ionicons\png\512\egg.png" />
+    <Content Include="bower_components\ionicons\png\512\eject.png" />
+    <Content Include="bower_components\ionicons\png\512\email.png" />
+    <Content Include="bower_components\ionicons\png\512\eye-disabled.png" />
+    <Content Include="bower_components\ionicons\png\512\eye.png" />
+    <Content Include="bower_components\ionicons\png\512\female.png" />
+    <Content Include="bower_components\ionicons\png\512\filing.png" />
+    <Content Include="bower_components\ionicons\png\512\film-marker.png" />
+    <Content Include="bower_components\ionicons\png\512\flag.png" />
+    <Content Include="bower_components\ionicons\png\512\flash-off.png" />
+    <Content Include="bower_components\ionicons\png\512\flash.png" />
+    <Content Include="bower_components\ionicons\png\512\flask.png" />
+    <Content Include="bower_components\ionicons\png\512\folder.png" />
+    <Content Include="bower_components\ionicons\png\512\fork-repo.png" />
+    <Content Include="bower_components\ionicons\png\512\fork.png" />
+    <Content Include="bower_components\ionicons\png\512\forward.png" />
+    <Content Include="bower_components\ionicons\png\512\game-controller-a.png" />
+    <Content Include="bower_components\ionicons\png\512\game-controller-b.png" />
+    <Content Include="bower_components\ionicons\png\512\gear-a.png" />
+    <Content Include="bower_components\ionicons\png\512\gear-b.png" />
+    <Content Include="bower_components\ionicons\png\512\grid.png" />
+    <Content Include="bower_components\ionicons\png\512\hammer.png" />
+    <Content Include="bower_components\ionicons\png\512\headphone.png" />
+    <Content Include="bower_components\ionicons\png\512\heart.png" />
+    <Content Include="bower_components\ionicons\png\512\help-buoy.png" />
+    <Content Include="bower_components\ionicons\png\512\help-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\help.png" />
+    <Content Include="bower_components\ionicons\png\512\home.png" />
+    <Content Include="bower_components\ionicons\png\512\icecream.png" />
+    <Content Include="bower_components\ionicons\png\512\icon-social-google-plus-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\icon-social-google-plus.png" />
+    <Content Include="bower_components\ionicons\png\512\image.png" />
+    <Content Include="bower_components\ionicons\png\512\images.png" />
+    <Content Include="bower_components\ionicons\png\512\information-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\information.png" />
+    <Content Include="bower_components\ionicons\png\512\ionic.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-alarm-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-alarm.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-albums-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-albums.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-back.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-down.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-forward.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-left.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-right.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-thin-down.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-thin-left.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-thin-right.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-thin-up.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-arrow-up.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-at-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-at.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-bell-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-bell.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-bolt-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-bolt.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-bookmarks-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-bookmarks.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-box-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-box.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-briefcase-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-briefcase.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-browsers-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-browsers.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-calculator-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-calculator.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-calendar-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-calendar.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-camera-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-camera.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cart-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cart.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-chatboxes-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-chatboxes.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-chatbubble-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-chatbubble.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-checkmark-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-checkmark-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-checkmark.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-circle-filled.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-circle-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-clock-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-clock.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-close-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-close-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-close.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloud-download-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloud-download.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloud-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloud-upload-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloud-upload.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloud.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloudy-night-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloudy-night.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloudy-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cloudy.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cog-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-cog.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-compose-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-compose.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-contact-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-contact.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-copy-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-copy.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-download-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-download.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-drag.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-email-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-email.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-eye-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-eye.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-fastforward-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-fastforward.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-filing-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-filing.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-film-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-film.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-flag-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-flag.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-folder-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-folder.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-gear-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-gear.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-glasses-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-glasses.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-heart-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-heart.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-help-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-help-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-help.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-infinite-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-infinite.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-information-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-information-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-information.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-ionic-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-keypad-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-keypad.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-lightbulb-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-lightbulb.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-location-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-location.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-locked-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-locked.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-medkit-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-medkit.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-mic-off.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-mic-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-mic.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-minus-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-minus-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-minus.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-monitor-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-monitor.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-moon-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-moon.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-more-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-more.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-musical-note.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-musical-notes.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-navigate-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-navigate.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-paperplane-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-paperplane.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-partlysunny-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-partlysunny.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-pause-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-pause.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-people-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-people.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-person-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-person.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-personadd-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-personadd.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-photos-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-photos.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-pie-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-pie.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-play-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-play.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-plus-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-plus-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-plus.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-pricetag-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-pricetag.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-printer-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-printer.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-rainy-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-rainy.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-recording-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-recording.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-redo-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-redo.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-refresh-empty.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-refresh-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-refresh.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-reload.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-rewind-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-rewind.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-search-strong.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-search.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-skipbackward-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-skipbackward.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-skipforward-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-skipforward.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-snowy.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-speedometer-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-speedometer.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-star-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-star.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-stopwatch-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-stopwatch.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-sunny-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-sunny.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-telephone-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-telephone.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-thunderstorm-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-thunderstorm.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-time-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-time.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-timer-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-timer.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-trash-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-trash.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-undo-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-undo.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-unlocked-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-unlocked.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-upload-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-upload.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-videocam-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-videocam.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-volume-high.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-volume-low.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-wineglass-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-wineglass.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-world-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\ios7-world.png" />
+    <Content Include="bower_components\ionicons\png\512\ipad.png" />
+    <Content Include="bower_components\ionicons\png\512\iphone.png" />
+    <Content Include="bower_components\ionicons\png\512\ipod.png" />
+    <Content Include="bower_components\ionicons\png\512\jet.png" />
+    <Content Include="bower_components\ionicons\png\512\key.png" />
+    <Content Include="bower_components\ionicons\png\512\knife.png" />
+    <Content Include="bower_components\ionicons\png\512\laptop.png" />
+    <Content Include="bower_components\ionicons\png\512\leaf.png" />
+    <Content Include="bower_components\ionicons\png\512\levels.png" />
+    <Content Include="bower_components\ionicons\png\512\lightbulb.png" />
+    <Content Include="bower_components\ionicons\png\512\link.png" />
+    <Content Include="bower_components\ionicons\png\512\load-a.png" />
+    <Content Include="bower_components\ionicons\png\512\load-b.png" />
+    <Content Include="bower_components\ionicons\png\512\load-c.png" />
+    <Content Include="bower_components\ionicons\png\512\load-d.png" />
+    <Content Include="bower_components\ionicons\png\512\location.png" />
+    <Content Include="bower_components\ionicons\png\512\locked.png" />
+    <Content Include="bower_components\ionicons\png\512\log-in.png" />
+    <Content Include="bower_components\ionicons\png\512\log-out.png" />
+    <Content Include="bower_components\ionicons\png\512\loop.png" />
+    <Content Include="bower_components\ionicons\png\512\magnet.png" />
+    <Content Include="bower_components\ionicons\png\512\male.png" />
+    <Content Include="bower_components\ionicons\png\512\man.png" />
+    <Content Include="bower_components\ionicons\png\512\map.png" />
+    <Content Include="bower_components\ionicons\png\512\medkit.png" />
+    <Content Include="bower_components\ionicons\png\512\mic-a.png" />
+    <Content Include="bower_components\ionicons\png\512\mic-b.png" />
+    <Content Include="bower_components\ionicons\png\512\mic-c.png" />
+    <Content Include="bower_components\ionicons\png\512\minus-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\minus-round.png" />
+    <Content Include="bower_components\ionicons\png\512\minus.png" />
+    <Content Include="bower_components\ionicons\png\512\model-s.png" />
+    <Content Include="bower_components\ionicons\png\512\monitor.png" />
+    <Content Include="bower_components\ionicons\png\512\more.png" />
+    <Content Include="bower_components\ionicons\png\512\music-note.png" />
+    <Content Include="bower_components\ionicons\png\512\navicon-round.png" />
+    <Content Include="bower_components\ionicons\png\512\navicon.png" />
+    <Content Include="bower_components\ionicons\png\512\navigate.png" />
+    <Content Include="bower_components\ionicons\png\512\no-smoking.png" />
+    <Content Include="bower_components\ionicons\png\512\nuclear.png" />
+    <Content Include="bower_components\ionicons\png\512\paper-airplane.png" />
+    <Content Include="bower_components\ionicons\png\512\paperclip.png" />
+    <Content Include="bower_components\ionicons\png\512\pause.png" />
+    <Content Include="bower_components\ionicons\png\512\person-add.png" />
+    <Content Include="bower_components\ionicons\png\512\person-stalker.png" />
+    <Content Include="bower_components\ionicons\png\512\person.png" />
+    <Content Include="bower_components\ionicons\png\512\pie-graph.png" />
+    <Content Include="bower_components\ionicons\png\512\pin.png" />
+    <Content Include="bower_components\ionicons\png\512\pinpoint.png" />
+    <Content Include="bower_components\ionicons\png\512\pizza.png" />
+    <Content Include="bower_components\ionicons\png\512\plane.png" />
+    <Content Include="bower_components\ionicons\png\512\play.png" />
+    <Content Include="bower_components\ionicons\png\512\playstation.png" />
+    <Content Include="bower_components\ionicons\png\512\plus-circled.png" />
+    <Content Include="bower_components\ionicons\png\512\plus-round.png" />
+    <Content Include="bower_components\ionicons\png\512\plus.png" />
+    <Content Include="bower_components\ionicons\png\512\pound.png" />
+    <Content Include="bower_components\ionicons\png\512\power.png" />
+    <Content Include="bower_components\ionicons\png\512\pricetag.png" />
+    <Content Include="bower_components\ionicons\png\512\pricetags.png" />
+    <Content Include="bower_components\ionicons\png\512\printer.png" />
+    <Content Include="bower_components\ionicons\png\512\radio-waves.png" />
+    <Content Include="bower_components\ionicons\png\512\record.png" />
+    <Content Include="bower_components\ionicons\png\512\refresh.png" />
+    <Content Include="bower_components\ionicons\png\512\reply-all.png" />
+    <Content Include="bower_components\ionicons\png\512\reply.png" />
+    <Content Include="bower_components\ionicons\png\512\search.png" />
+    <Content Include="bower_components\ionicons\png\512\settings.png" />
+    <Content Include="bower_components\ionicons\png\512\share.png" />
+    <Content Include="bower_components\ionicons\png\512\shuffle.png" />
+    <Content Include="bower_components\ionicons\png\512\skip-backward.png" />
+    <Content Include="bower_components\ionicons\png\512\skip-forward.png" />
+    <Content Include="bower_components\ionicons\png\512\social-android-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-android.png" />
+    <Content Include="bower_components\ionicons\png\512\social-apple-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-apple.png" />
+    <Content Include="bower_components\ionicons\png\512\social-bitcoin-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-bitcoin.png" />
+    <Content Include="bower_components\ionicons\png\512\social-buffer-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-buffer.png" />
+    <Content Include="bower_components\ionicons\png\512\social-designernews-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-designernews.png" />
+    <Content Include="bower_components\ionicons\png\512\social-dribbble-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-dribbble.png" />
+    <Content Include="bower_components\ionicons\png\512\social-dropbox-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-dropbox.png" />
+    <Content Include="bower_components\ionicons\png\512\social-facebook-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-facebook.png" />
+    <Content Include="bower_components\ionicons\png\512\social-freebsd-devil.png" />
+    <Content Include="bower_components\ionicons\png\512\social-github-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-github.png" />
+    <Content Include="bower_components\ionicons\png\512\social-googleplus-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-googleplus.png" />
+    <Content Include="bower_components\ionicons\png\512\social-hackernews-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-hackernews.png" />
+    <Content Include="bower_components\ionicons\png\512\social-linkedin-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-linkedin.png" />
+    <Content Include="bower_components\ionicons\png\512\social-pinterest-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-pinterest.png" />
+    <Content Include="bower_components\ionicons\png\512\social-reddit-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-reddit.png" />
+    <Content Include="bower_components\ionicons\png\512\social-rss-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-rss.png" />
+    <Content Include="bower_components\ionicons\png\512\social-skype-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-skype.png" />
+    <Content Include="bower_components\ionicons\png\512\social-tumblr-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-tumblr.png" />
+    <Content Include="bower_components\ionicons\png\512\social-tux.png" />
+    <Content Include="bower_components\ionicons\png\512\social-twitter-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-twitter.png" />
+    <Content Include="bower_components\ionicons\png\512\social-vimeo-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-vimeo.png" />
+    <Content Include="bower_components\ionicons\png\512\social-windows-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-windows.png" />
+    <Content Include="bower_components\ionicons\png\512\social-wordpress-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-wordpress.png" />
+    <Content Include="bower_components\ionicons\png\512\social-yahoo-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-yahoo.png" />
+    <Content Include="bower_components\ionicons\png\512\social-youtube-outline.png" />
+    <Content Include="bower_components\ionicons\png\512\social-youtube.png" />
+    <Content Include="bower_components\ionicons\png\512\speakerphone.png" />
+    <Content Include="bower_components\ionicons\png\512\speedometer.png" />
+    <Content Include="bower_components\ionicons\png\512\spoon.png" />
+    <Content Include="bower_components\ionicons\png\512\star.png" />
+    <Content Include="bower_components\ionicons\png\512\stats-bars.png" />
+    <Content Include="bower_components\ionicons\png\512\steam.png" />
+    <Content Include="bower_components\ionicons\png\512\stop.png" />
+    <Content Include="bower_components\ionicons\png\512\thermometer.png" />
+    <Content Include="bower_components\ionicons\png\512\thumbsdown.png" />
+    <Content Include="bower_components\ionicons\png\512\thumbsup.png" />
+    <Content Include="bower_components\ionicons\png\512\trash-a.png" />
+    <Content Include="bower_components\ionicons\png\512\trash-b.png" />
+    <Content Include="bower_components\ionicons\png\512\umbrella.png" />
+    <Content Include="bower_components\ionicons\png\512\unlocked.png" />
+    <Content Include="bower_components\ionicons\png\512\upload.png" />
+    <Content Include="bower_components\ionicons\png\512\usb.png" />
+    <Content Include="bower_components\ionicons\png\512\videocamera.png" />
+    <Content Include="bower_components\ionicons\png\512\volume-high.png" />
+    <Content Include="bower_components\ionicons\png\512\volume-low.png" />
+    <Content Include="bower_components\ionicons\png\512\volume-medium.png" />
+    <Content Include="bower_components\ionicons\png\512\volume-mute.png" />
+    <Content Include="bower_components\ionicons\png\512\waterdrop.png" />
+    <Content Include="bower_components\ionicons\png\512\wifi.png" />
+    <Content Include="bower_components\ionicons\png\512\wineglass.png" />
+    <Content Include="bower_components\ionicons\png\512\woman.png" />
+    <Content Include="bower_components\ionicons\png\512\wrench.png" />
+    <Content Include="bower_components\ionicons\png\512\xbox.png" />
+    <Content Include="bower_components\ionicons\readme.md" />
+    <Content Include="bower_components\ionicons\scss\ionicons.scss" />
+    <Content Include="bower_components\ionicons\scss\_ionicons-animation.scss" />
+    <Content Include="bower_components\ionicons\scss\_ionicons-font.scss" />
+    <Content Include="bower_components\ionicons\scss\_ionicons-icons.scss" />
+    <Content Include="bower_components\ionicons\scss\_ionicons-variables.scss" />
+    <Content Include="bower_components\ionic\.bower.json" />
+    <Content Include="bower_components\ionic\bower.json" />
+    <Content Include="bower_components\ionic\CHANGELOG.md" />
+    <Content Include="bower_components\ionic\gulpfile.js" />
+    <Content Include="bower_components\ionic\LICENSE" />
+    <Content Include="bower_components\ionic\README.md" />
+    <Content Include="bower_components\ionic\release\css\ionic.css" />
+    <Content Include="bower_components\ionic\release\css\ionic.min.css" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.eot" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.svg" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.ttf" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.woff" />
+    <Content Include="bower_components\ionic\release\js\ionic-angular.js" />
+    <Content Include="bower_components\ionic\release\js\ionic-angular.min.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.bundle.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.bundle.min.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.min.js" />
+    <Content Include="bower_components\ionic\release\version.json" />
+    <Content Include="bower_components\ionic\scss\ionic.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\ionicons.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-animation.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-font.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-icons.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-variables.scss" />
+    <Content Include="bower_components\ionic\scss\_action-sheet.scss" />
+    <Content Include="bower_components\ionic\scss\_animations.scss" />
+    <Content Include="bower_components\ionic\scss\_badge.scss" />
+    <Content Include="bower_components\ionic\scss\_bar.scss" />
+    <Content Include="bower_components\ionic\scss\_button-bar.scss" />
+    <Content Include="bower_components\ionic\scss\_button.scss" />
+    <Content Include="bower_components\ionic\scss\_checkbox.scss" />
+    <Content Include="bower_components\ionic\scss\_form.scss" />
+    <Content Include="bower_components\ionic\scss\_grid.scss" />
+    <Content Include="bower_components\ionic\scss\_items.scss" />
+    <Content Include="bower_components\ionic\scss\_list.scss" />
+    <Content Include="bower_components\ionic\scss\_menu.scss" />
+    <Content Include="bower_components\ionic\scss\_mixins.scss" />
+    <Content Include="bower_components\ionic\scss\_modal.scss" />
+    <Content Include="bower_components\ionic\scss\_platform.scss" />
+    <Content Include="bower_components\ionic\scss\_popup.scss" />
+    <Content Include="bower_components\ionic\scss\_radio.scss" />
+    <Content Include="bower_components\ionic\scss\_range.scss" />
+    <Content Include="bower_components\ionic\scss\_reset.scss" />
+    <Content Include="bower_components\ionic\scss\_scaffolding.scss" />
+    <Content Include="bower_components\ionic\scss\_slide-box.scss" />
+    <Content Include="bower_components\ionic\scss\_split-pane.scss" />
+    <Content Include="bower_components\ionic\scss\_tabs.scss" />
+    <Content Include="bower_components\ionic\scss\_toggle.scss" />
+    <Content Include="bower_components\ionic\scss\_type.scss" />
+    <Content Include="bower_components\ionic\scss\_util.scss" />
+    <Content Include="bower_components\ionic\scss\_variables.scss" />
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="css\ionic.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\ionic.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\ratchet-theme-android.css" />
+    <Content Include="css\ratchet-theme-android.min.css" />
+    <Content Include="css\ratchet-theme-ios.css" />
+    <Content Include="css\ratchet-theme-ios.min.css" />
+    <Content Include="css\ratchet.css" />
+    <Content Include="css\ratchetindex.min.css" />
+    <Content Include="css\ratchet.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\ionicons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ionicons.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ionicons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ionicons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ratchicons.eot" />
+    <Content Include="fonts\ratchicons.svg" />
+    <Content Include="fonts\ratchicons.ttf" />
+    <Content Include="fonts\ratchicons.woff" />
+    <Content Include="images\2b55ab2.jpg" />
+    <Content Include="images\blueOrngBall32.png" />
+    <Content Include="images\blueOrngDandM2.png" />
+    <Content Include="images\blueOrngDandM2_250.png" />
+    <Content Include="images\blueorngSplash.png" />
+    <Content Include="images\blueorngSplash320.png" />
+    <Content Include="images\candy1Small.png" />
+    <Content Include="images\colors.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\gradientBack.png" />
+    <Content Include="images\outside.png" />
+    <Content Include="indexCopy.html" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="kendo\js\cession.js" />
+    <Content Include="newPageTemplate.html" />
+    <Content Include="page1.html" />
+    <Content Include="indexOld.html" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <Content Include="js\angular-ui\angular-ui-router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular-ui\angular-ui-router.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular-animate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular-animate.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular-resource.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular-resource.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular-sanitize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular-sanitize.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\angular\angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ionic-angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ionic-angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ionic.bundle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ionic.bundle.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ionic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ionic.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\modals.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\popovers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\push.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\ratchet.js" />
+    <Content Include="js\ratchet.min.js" />
+    <Content Include="js\segmented-controllers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\sliders.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\toggles.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="kendo\js\jquery.min.js" />
+    <Content Include="kendo\js\kendo.mobile.min.js" />
+    <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="kendo\styles\images\back.png" />
+    <Content Include="kendo\styles\images\kendoui.svg" />
+    <Content Include="kendo\styles\images\kendoui.ttf" />
+    <Content Include="kendo\styles\images\kendoui.woff" />
+    <Content Include="kendo\styles\images\wp8_icons.png" />
+    <Content Include="kendo\styles\images\wp8_inverseicons.png" />
+    <Content Include="kendo\typescript\jquery.d.ts" />
+    <Content Include="kendo\typescript\kendo.mobile.d.ts" />
+    <Content Include="page2.html" />
+    <Content Include="scripts\app.js" />
+    <Content Include="index.html" />
+    <Content Include="styles\main.css" />
+    <Content Include="views\contacts.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\settings.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="bower_components\" />
+    <Folder Include="bower_components\angular-animate\" />
+    <Folder Include="bower_components\angular-sanitize\" />
+    <Folder Include="bower_components\angular\" />
+    <Folder Include="bower_components\ionicons\" />
+    <Folder Include="bower_components\ionicons\css\" />
+    <Folder Include="bower_components\ionicons\fonts\" />
+    <Folder Include="bower_components\ionicons\less\" />
+    <Folder Include="bower_components\ionicons\png\" />
+    <Folder Include="bower_components\ionicons\png\512\" />
+    <Folder Include="bower_components\ionicons\scss\" />
+    <Folder Include="bower_components\ionic\" />
+    <Folder Include="bower_components\ionic\js\" />
+    <Folder Include="bower_components\ionic\release\" />
+    <Folder Include="bower_components\ionic\release\css\" />
+    <Folder Include="bower_components\ionic\release\fonts\" />
+    <Folder Include="bower_components\ionic\release\js\" />
+    <Folder Include="bower_components\ionic\scss\" />
+    <Folder Include="bower_components\ionic\scss\ionicons\" />
+    <Folder Include="css\" />
+    <Folder Include="fonts\" />
+    <Folder Include="images\" />
+    <Folder Include="js\" />
+    <Folder Include="js\angular-ui\" />
+    <Folder Include="js\angular\" />
+    <Folder Include="kendo\" />
+    <Folder Include="kendo\js\" />
+    <Folder Include="kendo\styles\" />
+    <Folder Include="kendo\styles\images\" />
+    <Folder Include="kendo\typescript\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="scripts\" />
+    <Folder Include="styles\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!--
+    TODO: Uncomment this code if you need to customize the build process.
+    <Target Name="BeforeBuild">
+        <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+    </Target>
+
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+</Project>
