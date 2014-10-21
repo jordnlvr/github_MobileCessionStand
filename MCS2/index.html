@@ -10,19 +10,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
 
+    <link href="css/style.css" rel="stylesheet" />
     <link href="css/ratchet-theme-ios.min.css" rel="stylesheet" />
     <link href="css/ratchet.min.css" rel="stylesheet" />
-
     <style>
-        /*html,body{
-            height:100%;
-            width: 100%;
-            background: url(images/gradientBack.png) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }*/
         html, body {
             background: #ffffff; /* Old browsers */
             /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -36,28 +27,6 @@
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-8 */
         }
 
-        .Center-Container.is-Inline {
-            text-align: center;
-            overflow: auto;
-        }
-
-            .Center-Container.is-Inline:after,
-            .is-Inline .Center-Block {
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-            .Center-Container.is-Inline:after {
-                content: '';
-                height: 100%;
-                margin-left: -0.25em; /* To offset spacing. May vary by font */
-            }
-
-        .is-Inline .Center-Block {
-            max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
-            /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
-            margin-top: 30%;
-        }
     </style>
 </head>
 <body>
@@ -79,7 +48,7 @@
                     </div>
 
                     <p>
-                        <select id="selectUser" name="selectUser" style="color: #006194; background-color: white; width: 60%; line-height: 2em; font-size: 10pt;">
+                        <select id="selectUser" name="selectUser" style="color: #006194; background-color: white; width: 60%; line-height: 2em; font-size: 10pt; height: 42px;">
                             <option value="" style="font-size: 12pt;">
                                 **SELECT USER**
                             </option>
@@ -95,7 +64,7 @@
             <div class="clearfix"><br /></div>
 
             <div class="content-padded" style="width: 300px; margin: 0 auto; position: relative;">
-                <a class="btn btn-primary btn-block" onclick="goLogin()" style="line-height: 1.2em; width: 300px; font-size: 14pt;" id="btnLogin">Login</a>
+                <a class="btn btn-primary btn-block icon-login" onclick="goLogin()" style="line-height: 1.2em; width: 300px; font-size: 14pt;" id="btnLogin"> Login</a>
             </div>
             <div id="announcements" style="padding: 10px;">
                 
@@ -105,9 +74,45 @@
     <!--<script src="js/ratchet.min.js"></script>-->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="kendo/js/cession.js"></script>
     <script>
         var app = new kendo.mobile.Application($(document.body), { transition: "zoom" });
-        
+        (function (g) {
+
+            var productId = "5fa752ae121249ce9dfbb413aaadab1a"; // App unique product key
+
+            // Make analytics available via the window.analytics variable
+            // Start analytics by calling window.analytics.Start()
+            var analytics = g.analytics = g.analytics || {};
+            analytics.Start = function () {
+                // Handy shortcuts to the analytics api
+                var factory = window.plugins.EqatecAnalytics.Factory;
+                var monitor = window.plugins.EqatecAnalytics.Monitor;
+                // Create the monitor instance using the unique product key for Cession Analytics
+                var settings = factory.CreateSettings(productId);
+                settings.LoggingInterface = factory.CreateTraceLogger();
+                factory.CreateMonitorWithSettings(settings,
+                  function () {
+                      console.log("Monitor created");
+                      // Start the monitor inside the success-callback
+                      monitor.Start(function () {
+                          console.log("Monitor started");
+                      });
+                  },
+                  function (msg) {
+                      console.log("Error creating monitor: " + msg);
+                  });
+            }
+            analytics.Stop = function () {
+                var monitor = window.plugins.EqatecAnalytics.Monitor;
+                monitor.Stop();
+            }
+            analytics.Monitor = function () {
+                return window.plugins.EqatecAnalytics.Monitor;
+            }
+        })(window);
+
+
         var button = $("#button").kendoMobileButton();
         //var template = "Today we are introducing a new feature that you will love...";
         //$("#announcements").html(template);
@@ -116,11 +121,11 @@
         var href = "page1.html?q=" + selected.val();
 
         function goLogin() {
-            //app.navigate(href);            
+            //app.navigate(href);
             var selected = $("#selectUser");
             location.href = href + selected.val();
         }
-        
+
     </script>
 
 </body>

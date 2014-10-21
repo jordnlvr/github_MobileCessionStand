@@ -6,6 +6,20 @@
     <link href="css/ratchet.min.css" rel="stylesheet" />
     <link href="css/ratchet-theme-ios.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+        /*ICONMOON ICONS*/
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?-x7ol5y');
+            src: url('fonts/icomoon.eot?#iefix-x7ol5y') format('embedded-opentype'), url('fonts/icomoon.woff?-x7ol5y') format('woff'), url('fonts/icomoon.ttf?-x7ol5y') format('truetype'), url('fonts/icomoon.svg?-x7ol5y#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        [class^="icon-"], [class*=" icon-"] {
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
     <div data-role="view">
@@ -13,56 +27,137 @@
         <header class="bar bar-nav">
             <img class="media pull-left" src="images/blueOrngBall32.png" style="padding-top: 5px;" />
             <h1 class="title">D&amp;M Concessions</h1>
-            <a class="btn btn-link bnt-nav pull-right" id="btnBack" onclick="goBack()" style="line-height:2em;">BACK</a>
+            <a class="btn btn-link bnt-nav pull-right" id="btnBack" onclick="goBack()">BACK</a>
         </header>
         <!--CONTENT-->
         <div class="content">
-            <!--PADDED CONTENT-->
-            <div class="content-padded">
-                <h3>something</h3>
-            </div>
-            <!--CARD SURROUNDED CONTENT-->
-            <div class="card">
-                <div class="table-view">
-                    <div class="table-view-cell media">
-                        <div class="tenFont">
-                            <img class="media-object pull-left" src="images/2b55ab2.jpg" style="width: 60px;" />
-                            <div class="media-body">
-                                <p>logged in as</p>
-                                <p style="color: #006194; font-size: 12px;"><label id="lblPerson"></label></p>                                
+            <section style="background-color: yellow; min-height: 24%; display: flex; flex-direction: column;">
+                <!--PADDED CONTENT-->
+                <div class="content-padded">
+                    <h3>something</h3>
+                </div>
+                <!--CARD SURROUNDED CONTENT-->
+                <div class="card" style="border-radius: 2px; flex: 1;">
+                    CONTENT
+                </div>
+            </section>
+            <div style="background-color: red; min-height: 75%;">
+                <article class="content-padded tenFont">
+                    <div>
+                        <a href="newPageTemplate.html">
+                            <div class="blueHouse minHeightNinety leftFloatOneThird" id="flip">
+                                <div style="font-family: AurulentSans, icomoon; font-size: 1.3em;">
+                                    calculator
+                                </div>
+                                <div class="clearfix"></div>
+                                <div style="font-size: .7em; line-height: 1;">
+                                    click to go calculate stuff
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="icon-calculator" style="position: absolute; bottom: 5px; border: 0px;"></div>
                             </div>
-                        </div>
+                        </a>
+                        <a href="">
+                            <div class="blueHouse minHeightNinety rightFloatTwoThirds" id="flip2" style="background-color: #00a1d9; width: 64%;">
+                                <div style="font-family: AurulentSans, icomoon; font-size: 1.3em;">
+                                    money
+                                </div>
+                                <div class="clearfix"></div>
+                                <div style="font-size: .7em; line-height: 1;">
+                                    Stuff about money here.
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="icon-money" style="position: absolute; bottom: 5px; border: 0px;"></div>
+                            </div>
+                        </a>
                     </div>
+                </article>
+                <div class="clearfix"></div>
+                <article class="content-padded tenFont">
+                    <div>
+                        <a href="newPageTemplate.html">
+                            <div class="blueHouse minHeightNinety leftFloatOneThird" id="flip">
+                                <div style="font-family: AurulentSans, icomoon; font-size: 1.3em;">
+                                    menus
+                                </div>
+                                <div class="clearfix"></div>
+                                <div style="font-size: .7em; line-height: 1;">
+                                    information on the menus
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="icon-map3" style="position: absolute; bottom: 5px; border: 0px;"></div>
+                            </div>
+                        </a>
+                        <a href="newPageTemplate.html">
+                            <div class="blueHouse minHeightNinety rightFloatTwoThirds" id="flip2" style="width: 64%;">
+                                <div style="font-family: AurulentSans, icomoon; font-size: 1.3em;">
+                                    inventory
+                                </div>
+                                <div class="clearfix"></div>
+                                <div style="font-size: .7em; line-height: 1;">
+                                    count and check on inventory
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="icon-checklist" style="font-size: 2em; position: absolute; bottom: 0px; border: 0px;"></div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <div class="clearfix"></div>
+                <article class="content-padded tenFont">
+                    <div>
+                        <a href="contacts.html">
+                            <div class="blueHouse minHeightNinety leftFloatOneThird" id="flip">
+                                <div style="font-family: AurulentSans, icomoon; font-size: 1.3em;">
+                                    contacts
+                                </div>
+                                <div class="clearfix"></div>
+                                <div style="font-size: .7em; line-height: 1;">
+                                    check out some contacts
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="icon-users2" style="position: absolute; bottom: 5px; border: 0px;"></div>
+                            </div>
+                        </a>
+                        <a href="newPageTemplate.html">
+                            <div class="blueHouse minHeightNinety rightFloatTwoThirds" id="flip2" style="width: 64%;">
+                                <div style="font-family: AurulentSans, icomoon; font-size: 1.3em;">
+                                    schedules
+                                </div>
+                                <div class="clearfix"></div>
+                                <div style="font-size: .7em; line-height: 1;">
+                                    scheduling information
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="icon-calendar5" style="position: absolute; bottom: 5px; border: 0px;"></div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
                 </div>
+
+
             </div>
-            <div class="card elevenFont paddedAll">
-                <div>
-                    <a class="button selected-button" data-role="button" href="newPageTemplate.html" style="line-height:2em;">New Page</a>
-                    <br />
-                    And a whole bunch of other text goes here that can test how clear, how nice, and if (or if not) the 'good' class will work around other divs and items that have their own definitions.
-                </div>
-            </div>
-        </div>
         <!--TAB CONTROL AT BOTTOM-->
         <nav class="bar bar-tab">
             <a class="tab-item active" href="index.html">
-                <span class="icon icon-home"></span>
+                <span class="icon icon-home2"></span>
                 <span class="tab-label">Home</span>
             </a>
-            <a class="tab-item" href="#">
-                <span class="icon icon-person"></span>
+            <a class="tab-item" href="kendostuff.html">
+                <span class="icon icon-user2"></span>
                 <span class="tab-label">Profile</span>
             </a>
-            <a class="tab-item" href="#">
-                <span class="icon icon-star-filled"></span>
-                <span class="tab-label">Favorites</span>
+            <a class="tab-item" href="menus.html">
+                <span class="icon icon-star8"></span>
+                <span class="tab-label">Menus</span>
+            </a>
+            <a class="tab-item" href="contacts.html">
+                <span class="icon icon-users5"></span>
+                <span class="tab-label">Contacts</span>
             </a>
             <a class="tab-item" href="#">
-                <span class="icon icon-search"></span>
-                <span class="tab-label">Search</span>
-            </a>
-            <a class="tab-item" href="#">
-                <span class="icon icon-gear"></span>
+                <span class="icon icon-gears"></span>
                 <span class="tab-label">Settings</span>
             </a>
         </nav>
@@ -81,6 +176,58 @@
         var search = window.getParameterByName("q");
         $('#lblPerson').text(search);
         //alert(search);
+
+        $("#flip2").click(function () {
+            alert("Text: " + $("#flip2").text());
+
+        });
+
+        //THESE ARE THE HOVERS FOR THE PAGE BUTTONS
+        //$('#flip').hover(function () {
+        //    $('#flip').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip').css("background-color", "white");
+        //});
+        //$('#flip2').hover(function () {
+        //    $('#flip2').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip2').css("background-color", "white");
+        //});
+        //$('#flip3').hover(function () {
+        //    $('#flip3').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip3').css("background-color", "white");
+        //});
+        //$('#flip4').hover(function () {
+        //    $('#flip4').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip4').css("background-color", "white");
+        //});
+        //$('#flip5').hover(function () {
+        //    $('#flip5').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip5').css("background-color", "white");
+        //});
+        //$('#flip6').hover(function () {
+        //    $('#flip6').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip6').css("background-color", "white");
+        //});
+        //$('#flip7').hover(function () {
+        //    $('#flip7').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip7').css("background-color", "white");
+        //});
+        //$('#flip8').hover(function () {
+        //    $('#flip8').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip8').css("background-color", "white");
+        //});
+        //$('#flip9').hover(function () {
+        //    $('#flip9').css("background-color", "#f6f6f6");
+        //}, function () {
+        //    $('#flip9').css("background-color", "white");
+        //});
 
 
     </script>

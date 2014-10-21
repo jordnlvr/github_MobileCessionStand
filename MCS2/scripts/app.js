@@ -44,9 +44,6 @@ angular.module('todo', ['ionic'])
         // Cordova will wait 5 very long seconds to do it for you.
         //navigator.splashscreen.hide();
 
-        var analytics = window.plugins.EqatecAnalytics;
-        var settings = analytics.Factory.CreateSettings("91c6fa50595b44a7925bd96151f1add5", "1.06");
-        analytics.Factory.CreateMonitorWithSettings(settings, monitorCreated, monitorCreationFailed);
 
 
         app = new kendo.mobile.Application(document.body, {
@@ -56,10 +53,12 @@ angular.module('todo', ['ionic'])
             //skin: 'flat',
 
             // the application needs to know which view to load first
-            initial: 'views/home.html'
+            initial: 'views/home.html',
+            transition: "zoom"
         });
 
     }, false);
+
 
 
 }());
